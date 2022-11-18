@@ -66,7 +66,7 @@
             opt3: {
                 text: "",
                 nextpoint: 3,
-            },
+            }
         },
 //4
         {
@@ -82,7 +82,7 @@
             opt3: {
                 text: "",
                 nextpoint: 4,
-            },
+            }
         },
 //5
         {
@@ -98,7 +98,7 @@
             opt3: {
                 text: "",
                 nextpoint: 5,
-            },
+            }
         },
 //6
         {
@@ -114,10 +114,10 @@
             opt3: {
                 text: "",
                 nextpoint: 6,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //7
         {
             action: "Você então continua indo para o trabalho, contudo, no meio do caminho, avista seu melhor amigo, Patróclo Tisía Hetairos.",
@@ -132,10 +132,10 @@
             opt3: {
                 text: "",
                 nextpoint: 7,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //8
         {
             action: "Você comenta sobre a Assembleia com ele, e ele lhe conta sobre a ideia que estão tendo.",
@@ -150,10 +150,10 @@
             opt3: {
                 text: "",
                 nextpoint: 8,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //9
         {
             action: "Ouvi que estão com um plano de tomar bastilha e fazer uma declaração por direito do homem e do cidadão. Mostrar pra aquele reizinho de merda quem somos",
@@ -168,10 +168,10 @@
             opt3: {
                 text: "",
                 nextpoint: 9,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //10
         {
             action: "Ele lhe pergunta se quer se juntar.",
@@ -186,10 +186,10 @@
             opt3: {
                 text: "",
                 nextpoint: 10,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //11
         {
             action: "Você recusa, mas se lembra de todo o seu passado.",
@@ -204,10 +204,10 @@
             opt3: {
                 text: "",
                 nextpoint: 11,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //12
         {
             action: "Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou.",
@@ -222,10 +222,10 @@
             opt3: {
                 text: "",
                 nextpoint: 12,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //13
         {
             action: "É assim que se fala Aliquis. Vai ser em 2 semanas, se prepare.",
@@ -240,10 +240,10 @@
             opt3: {
                 text: "",
                 nextpoint: 13,
-            },
-        }
+            }
+        },
 
-    ];
+    
 	
 	
 //14
@@ -260,10 +260,10 @@
             opt3: {
                 text: "",
                 nextpoint: 14,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //15
         {
             action: "Você tira uma folga do trabalho para se preparar.",
@@ -278,10 +278,10 @@
             opt3: {
                 text: "",
                 nextpoint: 15,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //16
         {
             action: "Como você não comeu, tem tal opção agora. Deseja comer ou ir direto para o treino?",
@@ -296,10 +296,10 @@
             opt3: {
                 text: "",
                 nextpoint: 16,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //17
         {
             action: "Aliquis morre de fome", //linkar com a morte
@@ -314,10 +314,10 @@
             opt3: {
                 text: "",
                 nextpoint: 17,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //18
         {
             action: "Você tem o melhor treino de sua vida, assim, ficando totalmente preparado.",
@@ -332,10 +332,10 @@
             opt3: {
                 text: "",
                 nextpoint: 18,
-            },
-        }
+            }
+        },
 // OUHAHAUOSAHOUHNOUHUOHNUOHNUOHNUOHNUOHNUOHNUOHNUOHNUOH
-    ];
+    
 //19
         {
             action: "",
@@ -350,10 +350,10 @@
             opt3: {
                 text: "",
                 nextpoint: x,
-            },
-        }
+            }
+        },
 
-    ];
+    
 //x
         {
             action: "",
@@ -368,8 +368,8 @@
             opt3: {
                 text: "",
                 nextpoint: x,
-            },
-        }
+            }
+        },
 
     ];
 
@@ -377,105 +377,105 @@
 	
 	
 	
-// CONST AND VARS DECLARATION:
-
-    const action = document.getElementById("action-text");
-    const option1 = document.getElementById("option-1");
-    const option2 = document.getElementById("option-2");
-    const option3 = document.getElementById("option-3");
-
-
-// FUNCTIONS:
-
-    function typing(){
-        if(counter < text_typing.length){
-            action.innerHTML += text_typing.charAt(counter);
-            
-            counter += 1;
-
-            setTimeout(typing, 30);
-        };
-
-    total_time =  (text_typing.length)*30
-
-    return total_time;
-    }
-
-    function applyPoint(next) {
-        const point = history[next];
+    // CONST AND VARS DECLARATION:
         
-        counter = 0;
-        text_typing = String(point.action); 
-        typing();
-
-        setTimeout(() => {
-            if((point.opt1.text) != ("")){
-                option1.innerHTML = 
-                `<button class="option-1-pushable" role="button">
-                <span class="option-1-shadow"></span>
-                <span class="option-1-edge"></span>
-                <span class="option-1-front text">
-                ${point.opt1.text}
-                </span>
-                </button>`
-            }
-            if((point.opt2.text) != ("")){
-                option2.innerHTML = 
-                `<button class="option-2-pushable" role="button">
-                <span class="option-2-shadow"></span>
-                <span class="option-2-edge"></span>
-                <span class="option-2-front text">
-                ${point.opt2.text}
-                </span>
-                </button>`
-            }
-            if((point.opt3.text) != ("")){
-                option3.innerHTML = 
-                `<button class="option-3-pushable" role="button">
-                <span class="option-3-shadow"></span>
-                <span class="option-3-edge"></span>
-                <span class="option-3-front text">
-                ${point.opt3.text}
-                </span>
-                </button>`
-            }
-            option1.setAttribute('data-nextpoint', point.opt1.nextpoint);
-            option2.setAttribute('data-nextpoint', point.opt2.nextpoint);
-            option3.setAttribute('data-nextpoint', point.opt3.nextpoint);
-        }, total_time+250)
+            const action = document.getElementById("action-text");
+            const option1 = document.getElementById("option-1");
+            const option2 = document.getElementById("option-2");
+            const option3 = document.getElementById("option-3");
         
-    }
-
-    applyPoint(0);
-
-// EVENTS:
-
-    option1.addEventListener('click', function(e) {
-        action.innerHTML = "";
-        option1.innerHTML = "";
-        option2.innerHTML = "";
-        option3.innerHTML = "";
-        applyPoint(option1.getAttribute('data-nextpoint'));
-    });
-
-    option2.addEventListener('click', function(e) {
-        action.innerHTML = "";
-        action.innerHTML = "";
-        option1.innerHTML = "";
-        option2.innerHTML = "";
-        option3.innerHTML = "";
-        applyPoint(option2.getAttribute('data-nextpoint'));
-    });
-
-    option3.addEventListener('click', function(e) {
-        action.innerHTML = "";
-        action.innerHTML = "";
-        option1.innerHTML = "";
-        option2.innerHTML = "";
-        option3.innerHTML = "";
-        applyPoint(option3.getAttribute('data-nextpoint'));
-    });
-
+        
+        // FUNCTIONS:
+        
+            function typing(){
+                if(counter < text_typing.length){
+                    action.innerHTML += text_typing.charAt(counter);
+                    
+                    counter += 1;
+        
+                    setTimeout(typing, 30);
+                };
+        
+            total_time =  (text_typing.length)*30
+        
+            return total_time;
+            }
+        
+            function applyPoint(next) {
+                const point = history[next];
+                
+                counter = 0;
+                text_typing = String(point.action); 
+                typing();
+        
+                setTimeout(() => {
+                    if((point.opt1.text) != ("")){
+                        option1.innerHTML = 
+                        `<button class="option-1-pushable" role="button">
+                        <span class="option-1-shadow"></span>
+                        <span class="option-1-edge"></span>
+                        <span class="option-1-front text">
+                        ${point.opt1.text}
+                        </span>
+                        </button>`
+                    }
+                    if((point.opt2.text) != ("")){
+                        option2.innerHTML = 
+                        `<button class="option-2-pushable" role="button">
+                        <span class="option-2-shadow"></span>
+                        <span class="option-2-edge"></span>
+                        <span class="option-2-front text">
+                        ${point.opt2.text}
+                        </span>
+                        </button>`
+                    }
+                    if((point.opt3.text) != ("")){
+                        option3.innerHTML = 
+                        `<button class="option-3-pushable" role="button">
+                        <span class="option-3-shadow"></span>
+                        <span class="option-3-edge"></span>
+                        <span class="option-3-front text">
+                        ${point.opt3.text}
+                        </span>
+                        </button>`
+                    }
+                    option1.setAttribute('data-nextpoint', point.opt1.nextpoint);
+                    option2.setAttribute('data-nextpoint', point.opt2.nextpoint);
+                    option3.setAttribute('data-nextpoint', point.opt3.nextpoint);
+                }, total_time+250)
+                
+            }
+        
+            applyPoint(0);
+        
+        // EVENTS:
+        
+            option1.addEventListener('click', function(e) {
+                action.innerHTML = "";
+                option1.innerHTML = "";
+                option2.innerHTML = "";
+                option3.innerHTML = "";
+                applyPoint(option1.getAttribute('data-nextpoint'));
+            });
+        
+            option2.addEventListener('click', function(e) {
+                action.innerHTML = "";
+                action.innerHTML = "";
+                option1.innerHTML = "";
+                option2.innerHTML = "";
+                option3.innerHTML = "";
+                applyPoint(option2.getAttribute('data-nextpoint'));
+            });
+        
+            option3.addEventListener('click', function(e) {
+                action.innerHTML = "";
+                action.innerHTML = "";
+                option1.innerHTML = "";
+                option2.innerHTML = "";
+                option3.innerHTML = "";
+                applyPoint(option3.getAttribute('data-nextpoint'));
+            });
+        
 
 
 

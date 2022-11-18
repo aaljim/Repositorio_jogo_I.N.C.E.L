@@ -61,7 +61,7 @@
             },
             opt2: {
                 text: "Passar no BAR e comer um pouco",
-                nextpoint: 3,
+                nextpoint: 19,
             },
             opt3: {
                 text: "",
@@ -102,10 +102,10 @@
         },
 //6
         {
-            action: "",
+            action: "O panfleto fala sobre a Assembleia dos Estados Gerais, e vê que não adiantaria nada resolver as coisas de um jeito pacifico.",
             opt1: {
-                text: "",
-                nextpoint: 6,
+                text: "continuar",
+                nextpoint: 7,
             },
             opt2: {
                 text: "",
@@ -118,8 +118,265 @@
         }
 
     ];
+//7
+        {
+            action: "Você então continua indo para o trabalho, contudo, no meio do caminho, avista seu melhor amigo, Patróclo Tisía Hetairos.",
+            opt1: {
+                text: "continuar",
+                nextpoint: 8,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 7,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 7,
+            },
+        }
 
+    ];
+//8
+        {
+            action: "Você comenta sobre a Assembleia com ele, e ele lhe conta sobre a ideia que estão tendo.",
+            opt1: {
+                text: "continuar",
+                nextpoint: 9,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 8,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 8,
+            },
+        }
 
+    ];
+//9
+        {
+            action: "Ouvi que estão com um plano de tomar bastilha e fazer uma declaração por direito do homem e do cidadão. Mostrar pra aquele reizinho de merda quem somos",
+            opt1: {
+                text: "continuar",
+                nextpoint: 10,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 9,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 9,
+            },
+        }
+
+    ];
+//10
+        {
+            action: "Ele lhe pergunta se quer se juntar.",
+            opt1: {
+                text: "Aceita convite",
+                nextpoint: 12,
+            },
+            opt2: {
+                text: "Recusar convite",
+                nextpoint: 11,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 10,
+            },
+        }
+
+    ];
+//11
+        {
+            action: "Você recusa, mas se lembra de todo o seu passado.",
+            opt1: {
+                text: "continuar",
+                nextpoint: 12,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 11,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 11,
+            },
+        }
+
+    ];
+//12
+        {
+            action: "Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou.",
+            opt1: {
+                text: "continuar",
+                nextpoint: 13,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 12,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 12,
+            },
+        }
+
+    ];
+//13
+        {
+            action: "É assim que se fala Aliquis. Vai ser em 2 semanas, se prepare.",
+            opt1: {
+                text: "continuar",
+                nextpoint: 14,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 13,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 13,
+            },
+        }
+
+    ];
+	
+	
+//14
+        {
+            action: "Tenho duas semanas para me preparar, ok... vamos lá",
+            opt1: {
+                text: "continuar",
+                nextpoint: 15,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 14,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 14,
+            },
+        }
+
+    ];
+//15
+        {
+            action: "Você tira uma folga do trabalho para se preparar.",
+            opt1: {
+                text: "continuar",
+                nextpoint: 16,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 15,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 15,
+            },
+        }
+
+    ];
+//16
+        {
+            action: "Como você não comeu, tem tal opção agora. Deseja comer ou ir direto para o treino?",
+            opt1: {
+                text: "Comer",
+                nextpoint: 18,
+            },
+            opt2: {
+                text: "Treino",
+                nextpoint: 17,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 16,
+            },
+        }
+
+    ];
+//17
+        {
+            action: "Aliquis morre de fome", //linkar com a morte
+            opt1: {
+                text: "",
+                nextpoint: x,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 17,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 17,
+            },
+        }
+
+    ];
+//18
+        {
+            action: "Você tem o melhor treino de sua vida, assim, ficando totalmente preparado.",
+            opt1: {
+                text: "continuar",
+                nextpoint: x,
+            },
+            opt2: {
+                text: "",
+                nextpoint: 18,
+            },
+            opt3: {
+                text: "",
+                nextpoint: 18,
+            },
+        }
+// OUHAHAUOSAHOUHNOUHUOHNUOHNUOHNUOHNUOHNUOHNUOHNUOHNUOH
+    ];
+//19
+        {
+            action: "",
+            opt1: {
+                text: "continuar",
+                nextpoint: x,
+            },
+            opt2: {
+                text: "",
+                nextpoint: x,
+            },
+            opt3: {
+                text: "",
+                nextpoint: x,
+            },
+        }
+
+    ];
+//x
+        {
+            action: "",
+            opt1: {
+                text: "continuar",
+                nextpoint: x,
+            },
+            opt2: {
+                text: "",
+                nextpoint: x,
+            },
+            opt3: {
+                text: "",
+                nextpoint: x,
+            },
+        }
+
+    ];
+
+	
+	
+	
+	
 // CONST AND VARS DECLARATION:
 
     const action = document.getElementById("action-text");

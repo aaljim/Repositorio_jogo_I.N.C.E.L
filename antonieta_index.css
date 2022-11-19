@@ -1,36 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Didact+Gothic&family=EB+Garamond&family=Exo+2&display=swap%27');
 *{
+    font-family: 'Didact Gothic', serif;
+    font-weight: bold;
     padding: 0%;
     margin: 0%;
 }
 
 #action-text {
-    position: relative;
+    border-style: solid;
+    position: absolute;
     margin: auto;
     margin-top: 30px;
-    height: 500px;
-    width: 800px;
-    padding: auto;
+    left: 15px;
+    top: 320px;
+    height: 150px;
+    width: 92%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5vh;
 }
 #option-1 {
-    position: relative;
-    padding: 25px 50px;
-    width:41%;
-    top: 0px;
-    left: 60%;
+    position: absolute;
+    padding: 40px 20px;
+    width: 41%;
+    top: 520px;
 }
 #option-2 {
-    position:relative;
-    padding: 25px 50px;
+    position: absolute;
+    padding: 40px 20px;
     width:41%;
-    top: 50px;
-    left: 60%;
+    top: 520px;
+    left: 40%;
 }
 #option-3 {
-    position: relative;
-    padding: 25px 50px;
+    position: absolute;
+    padding: 40px 20px;
     width:41%;
-    top: 100px;
-    left: 60%;
+    top: 520px;
+    left: 78%;
 }
 
 /* BUTTONS */

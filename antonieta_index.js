@@ -889,7 +889,7 @@
                 {   
                     action: "Você se torna uma ótima Rainha verdadeiramente, fazendo a França futuramente dominar o mundo, junto de sua fiel escudeira." ,
                     opt1: {
-                        text: "Parabéns, você obteve um final alternativo (Não historicamente preciso)",
+                        text: "Você obteve um final alternativo (Não historicamente preciso)",
                         nextpoint: 150, //Final alternativo
                     },
                     opt2:  {
@@ -1978,5 +1978,4 @@
                 option3.innerHTML = "";
                 applyPoint(option3.getAttribute('data-nextpoint'));
             });
-        
         

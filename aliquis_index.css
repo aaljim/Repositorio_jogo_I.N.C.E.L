@@ -1,36 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Didact+Gothic&family=EB+Garamond&family=Exo+2&display=swap%27');
 *{
+    font-family: 'Didact Gothic', serif;
+    font-weight: bold;
     padding: 0%;
     margin: 0%;
 }
-
+body {
+    margin: 0%;
+    padding: 0%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(white 50%, transparent 50%), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fvector-damask-seamless-pattern-background-classical-luxury-old-vector-id1031539122&f=1&nofb=1&ipt=e7e7d296ccf618495a096286f99733af316c83ca97f1a1d822a3c6ced78cb06c&ipo=images");
+    background-size: 100%;
+    z-index: 1;
+    margin-top: 50%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 #action-text {
-    position: relative;
+    background-color: antiquewhite;
+    border-style: solid;
+    position: absolute;
     margin: auto;
-    margin-top: 30px;
-    height: 500px;
-    width: 800px;
-    padding: auto;
+    left: 1%;
+    top: 56%;
+    height: 24%;
+    width: 92%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5vh;
 }
 #span-option-1 {
-    position: relative;
-    padding: 25px 50px;
-    width:41%;
-    top: 0px;
-    left: 60%;
+    position: absolute;
+    width: 45%;
+    top: 87%;
+    left: 1%;
 }
 #span-option-2 {
-    position:relative;
-    padding: 25px 50px;
-    width:41%;
-    top: 50px;
-    left: 60%;
+    position: absolute;
+    width:45%;
+    top: 87%;
+    left: 33.75%;
 }
 #span-option-3 {
-    position: relative;
-    padding: 25px 50px;
-    width:41%;
-    top: 100px;
-    left: 60%;
+    position: absolute;
+    width:45%;
+    top: 87%;
+    left: 66.5%;
 }
 
 /* BUTTONS */
@@ -39,10 +54,10 @@
 
 
     :root{
-        --option-1-border-color1:hsl(310, 100%, 16%);
-        --option-1-border-color2:hsl(310, 100%, 32%);
+        --option-1-border-color1:rgb(1, 23, 88);
+        --option-1-border-color2:rgb(1, 31, 120);
 
-        --option-1-color1: hsl(310, 100%, 47%);
+        --option-1-color1: rgb(1, 37, 151);
     /* CHANGE ONLY THE FIRST VALUE IN THE PARENTHESES */
     }
 
@@ -97,12 +112,12 @@
         position: relative;
         padding: 12px 27px;
 
-        /*height: 100px;*/
-        width: 150px;
+        height: 50px;
+        width: 340px;
 
         border-radius: 12px;
         font-size: 1.1rem;
-        color: white;
+        color: black;
         background: var(--option-1-color1);
         will-change: transform;
         transform: translateY(-4px);
@@ -159,10 +174,10 @@
 
 
     :root{
-        --option-2-border-color1:hsl(310, 100%, 16%);
-        --option-2-border-color2:hsl(310, 100%, 32%);
+        --option-2-border-color1:rgb(50,50,50);
+        --option-2-border-color2:rgb(159,159,159);
         
-        --option-2-color1: hsl(310, 100%, 47%);
+        --option-2-color1: rgb(255, 255, 255);
         /* CHANGE ONLY THE FIRST VALUE IN THE PARENTHESES */
     }
 
@@ -217,12 +232,12 @@
         position: relative;
         padding: 12px 27px;
         
-        /*height: 100px;*/
-        width: 150px;
+        height: 50px;
+        width: 340px;
         
         border-radius: 12px;
         font-size: 1.1rem;
-        color: white;
+        color: black;
         background: var(--option-2-color1);
         will-change: transform;
         transform: translateY(-4px);
@@ -279,10 +294,10 @@
     
     
     :root{
-        --option-3-border-color1:hsl(310, 100%, 16%);
-        --option-3-border-color2:hsl(310, 100%, 32%);
+        --option-3-border-color1:rgb(137, 12, 21);
+        --option-3-border-color2:rgb(197, 16, 30);
         
-        --option-3-color1: hsl(310, 100%, 47%);
+        --option-3-color1: rgb(237, 40, 57);
         /* CHANGE ONLY THE FIRST VALUE IN THE PARENTHESES */
     }
     
@@ -337,12 +352,12 @@
         position: relative;
         padding: 12px 27px;
         
-        /*height: 100px;*/
-        width: 150px;
+        height: 50px;
+        width: 340px;
         
         border-radius: 12px;
         font-size: 1.1rem;
-        color: white;
+        color: black;
         background: var(--option-3-color1);
         will-change: transform;
         transform: translateY(-4px);

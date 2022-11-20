@@ -11,21 +11,21 @@
     width: 800px;
     padding: auto;
 }
-#option-1 {
+#span-option-1 {
     position: relative;
     padding: 25px 50px;
     width:41%;
     top: 0px;
     left: 60%;
 }
-#option-2 {
+#span-option-2 {
     position:relative;
     padding: 25px 50px;
     width:41%;
     top: 50px;
     left: 60%;
 }
-#option-3 {
+#span-option-3 {
     position: relative;
     padding: 25px 50px;
     width:41%;

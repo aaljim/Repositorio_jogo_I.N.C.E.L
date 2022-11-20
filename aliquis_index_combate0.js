@@ -2055,7 +2055,7 @@ function applyPoint(next) {
     
 // SE OPT1 TEXT IGUAL A BATALHAR ENTÃO BASTA COLOCAR O LINK DA RESPECTIVA PÁGINA DE COMBATE
     if(point.opt1.text == "Batalhar"){
-        window.location = "battle_tests_batalha1.html";
+        window.location = "https://aaljim.github.io/Repositorio_jogo_I.N.C.E.L/battle_tests_batalha1.html";
     }
     if(point.opt1.text == "Você morreu"){
         window.location = "https://tiago070.github.io/integrador2022/morte_aliquis.html";

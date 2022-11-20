@@ -1916,10 +1916,7 @@
         const point = history[next];
            
         
-        // SE O TEXTO DA OPT1 FOR IGUAL A BATALHAR BASTA TROCAR O LINK PARA A PÁGINA DE BATALHA RESPECTIVA
-        if(point.opt1.text == "BATALHAR"){
-        window.location = "link";
-        }
+        
         
         counter = 0;
         text_typing = String(point.action); 

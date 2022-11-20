@@ -13,41 +13,39 @@ body {
     background-size: 100%;
     z-index: 1;
     margin-top: 50%;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 #action-text {
     background-color: antiquewhite;
     border-style: solid;
     position: absolute;
     margin: auto;
-    margin-top: 30px;
-    left: 15px;
-    top: 320px;
-    height: 150px;
+    left: 1%;
+    top: 56%;
+    height: 24%;
     width: 92%;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 5vh;
 }
-#option-1 {
+#span-option-1 {
     position: absolute;
-    padding: 45px 20px;
     width: 45%;
-    top: 500px;
-    left: -0.50%;
+    top: 87%;
+    left: 1%;
 }
-#option-2 {
+#span-option-2 {
     position: absolute;
-    padding: 45px 20px;
     width:45%;
-    top: 500px;
-    left: 32.25%;
+    top: 87%;
+    left: 33.75%;
 }
-#option-3 {
+#span-option-3 {
     position: absolute;
-    padding: 45px 20px;
     width:45%;
-    top: 500px;
-    left: 65%;
+    top: 87%;
+    left: 66.5%;
 }
 
 /* BUTTONS */
@@ -119,7 +117,7 @@ body {
 
         border-radius: 12px;
         font-size: 1.1rem;
-        color: white;
+        color: black;
         background: var(--option-1-color1);
         will-change: transform;
         transform: translateY(-4px);
@@ -359,7 +357,7 @@ body {
         
         border-radius: 12px;
         font-size: 1.1rem;
-        color: white;
+        color: black;
         background: var(--option-3-color1);
         will-change: transform;
         transform: translateY(-4px);

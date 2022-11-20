@@ -809,11 +809,11 @@
                 {   
                     action: "“Minha Donzela, sinto lhe informar, mas, sua mãe... veio a óbito.”" ,
                     opt1: {
-                        text: "OAISNDHOISADNASPDOANOUASHNIOADOAJIDSJAODJKDJS",
+                        text: "OAISNDHOISADNASPDOANOUAS",
                         nextpoint: 51,
                     },
                     opt2:  {
-                        text: "OSNDONOSASDKAJSALODNASODINAIJMAIPAJMDIAJMISS",
+                        text: "OSNDONOSASDKAJSALODNASO",
                         nextpoint: 51,
                     },
                     opt3: {
@@ -845,7 +845,7 @@
                         nextpoint: 53,
                     },
                     opt2:  {
-                        text: "Continuar do jeito que está (vá para o quadro 19)",
+                        text: "Continuar do jeito que está",
                         nextpoint: 57,
                     },
                     opt3: {
@@ -1881,101 +1881,57 @@
         
         
         // CONST AND VARS DECLARATION:
+
+    const action = document.getElementById("action-text");
+    const option1 = document.getElementById("option-1");
+    const option2 = document.getElementById("option-2");
+    const option3 = document.getElementById("option-3");
+    const option1_bt = document.getElementById("option-1-pushable");
+    const option2_bt = document.getElementById("option-2-pushable");
+    const option3_bt = document.getElementById("option-3-pushable");
+
+// FUNCTIONS:
+
+    function typing(){
+        if(counter < text_typing.length){
+            action.innerHTML += text_typing.charAt(counter);
+            
+            counter += 1;
+
+            setTimeout(typing, 8);
+        };
+
+    total_time =  (text_typing.length)*8
+
+    return total_time;
+    }
+
+    function applyPoint(next) {
+        option1.innerHTML = "";
+        option2.innerHTML = "";
+        option3.innerHTML = "";
+        action.innerHTML = "";
         
-            const action = document.getElementById("action-text");
-            const option1 = document.getElementById("option-1");
-            const option2 = document.getElementById("option-2");
-            const option3 = document.getElementById("option-3");
+
+        const point = history[next];
         
+        counter = 0;
+        text_typing = String(point.action); 
+        typing();
+
+        setTimeout(() => {
+            option1.innerHTML = String(point.opt1.text);
+            option2.innerHTML = String(point.opt2.text);
+            option3.innerHTML = String(point.opt3.text);
+
+            option1_bt.setAttribute('onclick', `applyPoint(${point.opt1.nextpoint})`);
+            option2_bt.setAttribute('onclick', `applyPoint(${point.opt2.nextpoint})`);
+            option3_bt.setAttribute('onclick', `applyPoint(${point.opt3.nextpoint})`);
+        }, total_time+250)
         
-        // FUNCTIONS:
-        
-            function typing(){
-                if(counter < text_typing.length){
-                    action.innerHTML += text_typing.charAt(counter);
-                    
-                    counter += 1;
-        
-                    setTimeout(typing, 8);
-                };
-        
-            total_time =  (text_typing.length)*8
-        
-            return total_time;
-            }
-        
-            function applyPoint(next) {
-                const point = history[next];
-                
-                counter = 0;
-                text_typing = String(point.action); 
-                typing();
-        
-                setTimeout(() => {
-                    if((point.opt1.text) != ("")){
-                        option1.innerHTML = 
-                        `<button class="option-1-pushable" role="button">
-                        <span class="option-1-shadow"></span>
-                        <span class="option-1-edge"></span>
-                        <span class="option-1-front text">
-                        ${point.opt1.text}
-                        </span>
-                        </button>`
-                    }
-                    if((point.opt2.text) != ("")){
-                        option2.innerHTML = 
-                        `<button class="option-2-pushable" role="button">
-                        <span class="option-2-shadow"></span>
-                        <span class="option-2-edge"></span>
-                        <span class="option-2-front text">
-                        ${point.opt2.text}
-                        </span>
-                        </button>`
-                    }
-                    if((point.opt3.text) != ("")){
-                        option3.innerHTML = 
-                        `<button class="option-3-pushable" role="button">
-                        <span class="option-3-shadow"></span>
-                        <span class="option-3-edge"></span>
-                        <span class="option-3-front text">
-                        ${point.opt3.text}
-                        </span>
-                        </button>`
-                    }
-                    option1.setAttribute('data-nextpoint', point.opt1.nextpoint);
-                    option2.setAttribute('data-nextpoint', point.opt2.nextpoint);
-                    option3.setAttribute('data-nextpoint', point.opt3.nextpoint);
-                }, total_time+250)
-                
-            }
-        
-            applyPoint(0);
-        
-        // EVENTS:
-        
-            option1.addEventListener('click', function(e) {
-                action.innerHTML = "";
-                option1.innerHTML = "";
-                option2.innerHTML = "";
-                option3.innerHTML = "";
-                applyPoint(option1.getAttribute('data-nextpoint'));
-            });
-        
-            option2.addEventListener('click', function(e) {
-                action.innerHTML = "";
-                action.innerHTML = "";
-                option1.innerHTML = "";
-                option2.innerHTML = "";
-                option3.innerHTML = "";
-                applyPoint(option2.getAttribute('data-nextpoint'));
-            });
-        
-            option3.addEventListener('click', function(e) {
-                action.innerHTML = "";
-                action.innerHTML = "";
-                option1.innerHTML = "";
-                option2.innerHTML = "";
-                option3.innerHTML = "";
-                applyPoint(option3.getAttribute('data-nextpoint'));
-            });
+    }
+
+    applyPoint(0);
+
+// EVENTS:
         

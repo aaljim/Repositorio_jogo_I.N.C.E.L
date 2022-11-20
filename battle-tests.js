@@ -12,6 +12,12 @@ function reiniciar(){
     document.location.reload(true);
 }
 
+const link1 = "google.com" ;
+
+function link_function(){
+    window.location = link1;
+}
+
 //CHAR'S DECLARATIONS
 
 const char = document.getElementById("char");
@@ -83,17 +89,6 @@ function e_atk_animation(){
 }
 
 // ACTIONS
-
-    // SHOWS ATK OPTIONS
-    function atk_opt(){
-        document.getElementById("atk_opt").style.display = "block";
-    }
-
-    // HIDE ATK OPTIONS
-    function cancel_atk(){
-        document.getElementById("atk_opt").style.display = "none";
-    };
-
 function atk(sta, dmg, pc){
     sta = parseFloat(sta);
     dmg = parseFloat(dmg);
@@ -129,11 +124,11 @@ function atk(sta, dmg, pc){
         document.getElementById("enemy_info").style.display = "none";
 
         document.getElementById("painel").innerHTML = 
-        `<center><button class="button-pushable restart-button" role="button" onclick="reiniciar()">
+        `<center><button class="button-pushable restart-button" role="button" onclick="link_function()">
         <span class="button-shadow"></span>
         <span class="button-edge"></span>
         <span class="button-front text">
-          REINICIAR
+          CONTINUE
         </span>
         </button></center>`;
 

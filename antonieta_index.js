@@ -1906,11 +1906,13 @@ total_time =  (text_typing.length)*8
 return total_time;
 }
 
-function applyPoint(next) {
+function applyPoint(next) { 
+ 
     option1.innerHTML = "";
     option2.innerHTML = "";
     option3.innerHTML = "";
     action.innerHTML = "";
+    
     const point = history[next];
     if(point.action == "Olá Jogador, me sinto lisonjeada por sua escolha ser minha pessoa. Antes de adentrar a história, que tal conhecer mais sobre a minha?"){
         document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/rdBV7Xv.jpeg")   

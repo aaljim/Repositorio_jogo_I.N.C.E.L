@@ -2059,6 +2059,9 @@ function applyPoint(next) {
 	if(point.action == "Espero ter feito algo bom meu caro amigo, espero ter consigo influenciar em algo, ter ajudado a França..."){
         document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/UPFb4JC.jpg")   
     }
+	if(point.opt1.text == "Fim"){
+        option1_bt.setAttribute("onclick", "window.location = 'final.html'");
+    };
     
 // SE OPT1 TEXT IGUAL A BATALHAR ENTÃO BASTA COLOCAR O LINK DA RESPECTIVA PÁGINA DE COMBATE
 

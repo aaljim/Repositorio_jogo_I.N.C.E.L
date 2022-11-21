@@ -759,7 +759,7 @@
                 },
     // 47 (Quadro 14)            
                 {   
-                    action: "Você vai parar o Petit Trianon. Contudo, como na época começou a se falar seriamente em redução de custos, você recebe críticas." ,
+                    action: "Você vai para o Petit Trianon. Contudo, como na época começou a se falar seriamente em redução de custos, você recebe críticas." ,
                     opt1: {
                         text: "Continuar",
                         nextpoint: 49,
@@ -855,7 +855,7 @@
                 },
     // 53 (Quadro 18(Me mata).1)            
                 {   
-                    action: "Você, com a ajuda o povo, fazem uma revolução e conseguem o controle da França, onde é implementado uma monarquia constitucional que atende aos interesses burgueses" ,
+                    action: "Você, com a ajuda do povo, fazem uma revolução e conseguem o controle da França, onde é implementado uma monarquia constitucional que atende aos interesses burgueses" ,
                     opt1: {
                         text: "Continuar",
                         nextpoint: 54,
@@ -905,7 +905,7 @@
                 {   
                     action: "Seu marido começa a pensar que você está louca, e lhe condena a guilhotina." ,
                     opt1: {
-                        text: "Continuar",
+                        text: "Você morreu",
                         nextpoint: 151, //final rip bozo burro pra caralho
                     },
                     opt2:  {
@@ -1033,7 +1033,7 @@
                 {   
                     action: "Por você se recusar a comandar as decisões políticas, o povo se viu sem líder, assim, iniciando uma revolução, sentenciando todos do clero à morte por negligência." ,
                     opt1: {
-                        text: "Continuar",
+                        text: "Você morreu",
                         nextpoint: 150, //morreu
                     },
                     opt2:  {
@@ -1161,7 +1161,7 @@
                 {   
                     action: "Você consegue voltar para a Áustria com a ajuda de seu irmão, assim, sobrevivendo." ,
                     opt1: {
-                        text: "Parabéns, você obteve um final alternativo (Não historicamente preciso)",
+                        text: "Você obteve um final alternativo (Não historicamente preciso)",
                         nextpoint: 150, //final alternativo
                     },
                     opt2:  {
@@ -1447,7 +1447,7 @@
                 },
     //90 (Quadro 48)            
                 {   
-                    action: 'Você em um interrogatório, você é acusada de alta traição. Acusaram-lhe de ter ensinado "a arte da dissimulação" ao marido, com o qual o rei tinha enganado o povo da França.' ,
+                    action: 'Você em um interrogatório é acusada de alta traição. Acusaram-lhe de ter ensinado "a arte da dissimulação" ao marido, com o qual o rei tinha enganado o povo da França.' ,
                     opt1: {
                         text: "Responder",
                         nextpoint: 91,
@@ -1609,7 +1609,7 @@
                 {   
                     action: "Você morre na manhã de 16 de outubro, sem conseguir expressar seus sentimentos." ,
                     opt1: {
-                        text: "Parabéns, você obteve um final alternativo (Não historicamente preciso)", //final alternativo
+                        text: "Você obteve um final alternativo (Não historicamente preciso)", //final alternativo
                         nextpoint: 150,
                     },
                     opt2:  {
@@ -1911,10 +1911,7 @@ function applyPoint(next) {
     option2.innerHTML = "";
     option3.innerHTML = "";
     action.innerHTML = "";
-    
-
     const point = history[next];
-
     if(point.action == "Olá Jogador, me sinto lisonjeada por sua escolha ser minha pessoa. Antes de adentrar a história, que tal conhecer mais sobre a minha?"){
         document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/rdBV7Xv.jpeg")   
     }
@@ -1939,39 +1936,141 @@ function applyPoint(next) {
     if(point.action == 'Às 12:15, a lâmina caia sobre seu pescoço. O carrasco, então, pega sua cabeça ensanguentada, mostra para o povo, gritando: "VIVA A REPÚBLICA!".'){
         document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/oIntsA2.png")   
     }
-    
-    
-    
+    if(point.action == 'O rei lhe presenteia com o Petit Trianon, um palácio. Após tal ocorrido, a França mergulhou numa crise financeira.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/i1BaMsf.jpeg")   
+    }
+    if(point.action == 'Seu irmão veio investigar por qual motivo ainda o casamento não tinha sido consumado.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/4rtZqO4.jpeg")   
+    }
+    if(point.action == 'Seu irmão após conversar com o Rei sobre o seu mais recente comportamento, lhe reprime severamente.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/zTbwn8g.jpeg")   
+    }
+    if(point.action == 'Seu irmão vai falar com o Rei, e descobre que tanto você, quanto o Luís Augusto, são dois perfeitos confusos.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/zTbwn8g.jpeg")   
+    }
+    if(point.action == 'Seguindo os conselhos, você se aproxima novamente do Rei, e em 18 agosto de 1777, o casamento é oficialmente consolidado.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/yIpznox.jpeg")   
+    }
+    if(point.action == 'Em 1778, com a sucessão da Baviera, sua mãe fez pesadas chantagens psicológicas para promover os interesses austríacos.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Km72vpF.jpeg")   
+    }
+    if(point.action == 'A reforma de Petit Trianon está finalizada, deseja ficar nele?'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/i1BaMsf.jpeg")   
+    }
+    if(point.action == 'Você decide ficar em casa, e acaba sendo melhor vista pelo povo e a corte, por ir com a redução de custos'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Km72vpF.jpeg")   
+    }
+    if(point.action == '29 de novembro de 1780, você recebe uma notícia de seu marido.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/yIpznox.jpeg")   
+    }
+    if(point.action == 'Por conta da notícia, você acaba por desmaiar.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/chvvzSF.jpeg")   
+    }
+    if(point.action == 'Focando nas coisas boas, você acaba por se libertar daquele sentimento de controle de sua mãe, fazendo assim, você tomar suas verdadeiras escolhas.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Km72vpF.jpeg")   
+    }
+    if(point.action == 'Você, com a ajuda do povo, fazem uma revolução e conseguem o controle da França, onde é implementado uma monarquia constitucional que atende aos interesses burgueses'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/3hS9hOu.jpeg")   
+    }
+    if(point.action == 'Seu marido começa a pensar que você está louca, e lhe condena a guilhotina.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Icur83O.jpeg")   
+    }
+    if(point.action == 'Você junto de seu marido, superam tal momento trágico juntos, fazendo assim, que se aproximem novamente, com isto, você engravida outra vez.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/KIBkOqd.jpeg")   
+    }
+    if(point.action == '22 de outubro de 1781, você deu à luz a seu filho, nomeado de Luís José, agora, com um herdeiro de estado, você é legitimamente considerada rainha da França.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Km72vpF.jpeg")   
+    }
+    if(point.action == 'Começou a circulação de panfletos que questionavam a paternidade, dizendo que o pai não era o rei, a sua reputação ficou bastante danificada. Contudo, a alegria de seu filho era tanta, que ignorou tudo que falavam.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/UzS1AeH.jpeg")   
+    }
+    if(point.action == 'O Rei entrou em depressão profunda, e ficou ao seu cargo de controlar as decisões políticas.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/KIBkOqd.jpeg")   
+    }
+    if(point.action == 'Por você se recusar a comandar as decisões políticas, o povo se viu sem líder, assim, iniciando uma revolução, sentenciando todos do clero à morte por negligência.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Icur83O.jpeg")   
+    }
+    if(point.action == 'Você entra como comandante da força política. Onde você apenas se importou com o bem da França por bem de seus herdeiros'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/1SqI8K2.jpeg")  
+    }
+    if(point.action == 'O duque de Orléans, começou uma intensa campanha contra a coroa, e especialmente, você.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/2pvf6Ba.jpeg")   
+    }
+    if(point.action == 'As dificuldades da época, e todo o ódio que sofria, causou a você e seu marido uma queda de saúde trágica, onde, você, por motivos desconhecidos, começou a engordar.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/wfL7DI0.jpeg")   
+    }
+    if(point.action == 'Seu filho morreu na noite de 4 de junho de 1789, aos oito anos de idade, porém, tampouco importa para o povo, você proclama: "Meu filho está morto e não parece importar a ninguém!".'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/1SqI8K2.jpeg")   
+    }
+    if(point.action == 'REVOLUÇÃO'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Icur83O.jpeg")   
+    }
+    if(point.action == 'Você consegue voltar para a Áustria com a ajuda de seu irmão, assim, sobrevivendo.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/mUM9lwp.jpeg")  
+    }
+    if(point.action == 'Mesmo com os perigos, você decide ficar para ajudar seu marido. Isto irá lhe custar caro.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/KIBkOqd.jpeg")   
+    }
+    if(point.action == "4 dias após isto, uma multidão, em sua maioria mulheres vai até as portas do castelo exigir pão. Tal atitude será conhecida mais tarde como Marcha de Outubro."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/PwK6iMd.jpeg")   
+    }
+    if(point.action == 'Na manhã seguinte, conseguem invadir o local, tendo mortes de todos os lados. Você e seu marido são obrigados a voltar para o palácio em Paris.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/tJhvNwf.jpeg")  
+    }
+    if(point.action == 'Vocês tentam fugir para os países baixos austríacos, contudo, vocês são vistos perto da fronteira, assim, sendo presos e levados de volta a Paris.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/chvvzSF.jpeg")   
+    }
+    if(point.action == '20 de junho de 1792 o povo em armas atacou pela primeira vez o Palácio. Vocês foram severamente insultados e ameaçados, contudo, mantiveram a compostura.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/tJhvNwf.jpeg")  
+    }
+    if(point.action == 'Você não tem mais escolhas.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/chvvzSF.jpeg")   
+    }
+    if(point.action == 'Seu marido é processado e sentenciado a guilhotina.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Icur83O.jpeg")   
+    }
+    if(point.action == 'Após a morte dele, você ficou presa esperando o seu processo na Torre do Templo com sua filha, sua cunhada e seu filho.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/XfLQa0n.jpeg")  
+    }
+    if(point.action == '5 de outubro é pronunciado um discurso contra ti, onde, foi chamada de "A vergonha da humanidade e do seu sexo".'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/1SqI8K2.jpeg")   
+    }
+    if(point.action == '"É a vós, minha irmã, que escrevo pela última vez. Acabo de ser condenada, não a uma morte vergonhosa, pois esta é tão somente para os criminosos, mas a que me juntará ao vosso irmão. Inocente como ele, espero mostrar a mesma firmeza que ele em seus últimos momentos.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Pjw8hEt.jpeg")   
+    }
+    if(point.action == 'Você morre na manhã de 16 de outubro, sem conseguir expressar seus sentimentos.'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/oIntsA2.png")    
+    }
+    if(point.action == 'Você vai para a guilhotina em praça pública, onde suas últimas palavras são "Perdão, senhor. Eu não fiz de propósito'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/CFLczSY.jpeg")    
+    }
+    if(point.action == 'Às 12:15, a lâmina caia sobre seu pescoço. O carrasco, então, pega sua cabeça ensanguentada, mostra para o povo, gritando: "VIVA A REPÚBLICA!".'){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/iyYhIjG.jpeg")   
+    }    
 // SE OPT1 TEXT IGUAL A BATALHAR ENTÃO BASTA COLOCAR O LINK DA RESPECTIVA PÁGINA DE COMBATE
-
 counter = 0;
 text_typing = String(point.action); 
 typing();
-
 setTimeout(() => {
     option1.innerHTML = String(point.opt1.text);
     option2.innerHTML = String(point.opt2.text);
-    option3.innerHTML = String(point.opt3.text);
-    
+    option3.innerHTML = String(point.opt3.text); 
     option1_bt.setAttribute('onclick', `applyPoint(${point.opt1.nextpoint})`);
     option2_bt.setAttribute('onclick', `applyPoint(${point.opt2.nextpoint})`);
     option3_bt.setAttribute('onclick', `applyPoint(${point.opt3.nextpoint})`);
-    
-    
-
     if(point.opt1.text == "Batalhar"){
-        option1_bt.setAttribute("onclick", "window.location = 'https://aaljim.github.io/Repositorio_jogo_I.N.C.E.L/battle_tests_batalha1.html'");
+        option1_bt.setAttribute("onclick", "window.location = 'battle_tests_batalha1.html'");
     };
     if(point.opt1.text == "Você morreu"){
-        option1_bt.setAttribute("onclick", "window.location = 'https://tiago070.github.io/integrador2022/morte_aliquis.html'");
+        option1_bt.setAttribute("onclick", "window.location = 'mortepadrao.html'");
     };
-
-
+    if(point.opt1.text == "Você obteve um final alternativo (Não historicamente preciso)"){
+        option1_bt.setAttribute("onclick", "window.location = 'final.html'");
+    };
+    if(point.opt1.text == "Parabéns, você obteve o final verdadeiro"){
+        option1_bt.setAttribute("onclick", "window.location = 'final.html'");
+    };
 }, total_time+250)
-
-
 }
-
 applyPoint(0);
-
-        
+    

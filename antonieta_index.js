@@ -1905,7 +1905,7 @@ total_time =  (text_typing.length)*8
 
 return total_time;
 }
-
+applyPoint(0);
 function applyPoint(next) { 
  
     option1.innerHTML = "";
@@ -2074,5 +2074,5 @@ setTimeout(() => {
     };
 }, total_time+250)
 }
-applyPoint(0);
+
     

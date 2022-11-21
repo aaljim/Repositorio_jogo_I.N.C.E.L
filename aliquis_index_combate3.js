@@ -2077,7 +2077,7 @@ setTimeout(() => {
     option3_bt.setAttribute('onclick', `applyPoint(${point.opt3.nextpoint})`);
 
     if(point.opt1.text == "Batalhar"){
-        option1_bt.setAttribute("onclick", "window.location = 'https://aaljim.github.io/Repositorio_jogo_I.N.C.E.L/battle_tests_batalha4.html'");
+        option1_bt.setAttribute("onclick", "window.location = 'battle_tests_batalha4.html'");
     };
     if(point.opt1.text == "Você morreu"){
         option1_bt.setAttribute("onclick", "window.location = 'morte_aliquis.html'");

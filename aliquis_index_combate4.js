@@ -2122,6 +2122,9 @@ setTimeout(() => {
     if(point.opt1.text == "Você morreu"){
         option1_bt.setAttribute("onclick", "window.location = 'morte_aliquis.html'");
     };
+	if(point.opt1.text == "Fim"){
+        option1_bt.setAttribute("onclick", "window.location = 'final.html'");
+    };
 
 
 }, total_time+250)

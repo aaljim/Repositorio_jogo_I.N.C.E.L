@@ -1201,7 +1201,7 @@
                 },
         //74
                 {
-                    action: "10 horas depois",
+                    action: "10 horas depois.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 75,
@@ -1249,7 +1249,7 @@
                 },
         //77 // fala de pierre
                 {
-                    action: "Pierre: Posso me juntar a você?",
+                    action: "Posso me juntar a você?",
                     opt1: {
                         text: "Claro",
                         nextpoint: 78,
@@ -1265,7 +1265,7 @@
                 },
         //78 // fala de aliquis
                 {
-                    action: "Aliquis: Por que você acha que ele se sacrificou por mim?",
+                    action: "Por que você acha que ele se sacrificou por mim?",
                     opt1: {
                         text: "Escutar a resposta de pierre.",
                         nextpoint: 79,
@@ -1281,7 +1281,7 @@
                 },
         //79 // fala de pierre
                 {
-                    action: "Pierre: Não faço ideia, quem sabe, é porque ele te via como um irmão mais novo a ser protegido",
+                    action: "Não faço ideia, quem sabe, é porque ele te via como um irmão mais novo a ser protegido.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 80,
@@ -1297,7 +1297,7 @@
                 },
         //80 // fala de aliquis
                 {
-                    action: "Aliquis: Desde sempre, eu só me importei comigo e com a minha ambição!",
+                    action: "Desde sempre, eu só me importei comigo e com a minha ambição!",
                     opt1: {
                         text: "Escutar a resposta de pierre.",
                         nextpoint: 81,
@@ -1314,7 +1314,7 @@
         
         //81 // fala de aliquis
                 {
-                    action: "Aliquis: Do que adianta qual ambição se não posso comemorar com quem eu gosto? Esse vazio. Esse vazio eu irei carregar para sempre",
+                    action: "Do que adianta qual ambição se não posso comemorar com quem eu gosto? Esse vazio. Esse vazio eu irei carregar para sempre.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 82,
@@ -1330,7 +1330,7 @@
                 },
         //82 // fala de aliquis
                 {
-                    action: "Aliquis: Ele morreu por mim, então, em compensação, irei carregar os sonhos dele, irei carregar ele comigo para todo o sempre!",
+                    action: "Ele morreu por mim, então, em compensação, irei carregar os sonhos dele, irei carregar ele comigo para todo o sempre!",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 83,
@@ -1346,7 +1346,7 @@
                 },
         //83 // fala de pierre
                 {
-                    action: "Pierre: Cuidado para não se afogar em magoas por não conseguir fazer algo tão grande.",
+                    action: "Cuidado para não se afogar em magoas por não conseguir fazer algo tão grande.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 84,
@@ -1362,7 +1362,7 @@
                 },
         //84 // fala de aliquis
                 {
-                    action: "Aliquis: É um peso que eu vou levar, tenho que levar.",
+                    action: "É um peso que eu vou levar, tenho que levar.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 85,
@@ -1378,7 +1378,7 @@
                 },
         //85 // fala de pierre
                 {
-                    action: "Pierre: Só pelo fato dele se sacrificar acha mesmo que tem o direito de carregar os sonhos dele? Quanta arrogância",
+                    action: "Só pelo fato dele se sacrificar acha mesmo que tem o direito de carregar os sonhos dele? Quanta arrogância.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 86,
@@ -1394,7 +1394,7 @@
                 },
         //86 // fala de pierre
                 {
-                    action: "Pierre: O desejo dele foi você continuar vivo, e não que carregassem os sonhos dele.",
+                    action: "O desejo dele foi você continuar vivo, e não que carregassem os sonhos dele.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 87,
@@ -1410,7 +1410,7 @@
                 },
         //87 // fala de pierre
                 {
-                    action: "Pierre: Espero que algum dia consiga entender isto, e se encontre!",
+                    action: "Espero que algum dia consiga entender isto, e se encontre!",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 88,
@@ -1426,7 +1426,7 @@
                 },
         //88 // fala de pierre
                 {
-                    action: "Pierre: Eu vou voltar para a festa, estão me esperando, espero que fique bem.",
+                    action: "Eu vou voltar para a festa, estão me esperando, espero que fique bem.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 89,
@@ -1442,7 +1442,7 @@
                 },
         //89 // fala de pierre
                 {
-                    action: "Pierre: Sempre que precisa de alguma ajuda, conte comigo, Aliquis",
+                    action: "Sempre que precisa de alguma ajuda, conte comigo, Aliquis.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 90,
@@ -1616,9 +1616,9 @@
                         nextpoint: 99,
                     }
                 },
-        //100 //fala de aliquis
+        //100 //fala de pierre
                 {
-                    action: "Aliquis: Por mais que esteja treinando, prefiro ficar aqui, longe batalhas, acho que era isto que Patróclo gostaria.",
+                    action: "É, você tem razão, bem, já vou indo, tenho muito a fazer até outro dia, Aliquis.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 101,
@@ -1629,12 +1629,12 @@
                     },
                     opt3: {
                         text: "",
-                        nextpoint: 100
+                        nextpoint: 100,
                     }
                 },
-        //101 //fala de pierre
+        //101 
                 {
-                    action: "Pierre: É, você tem razão, bem, já vou indo, tenho muito a fazer até outro dia, Aliquis.",
+                    action: "1 ano se passa, e você fica sabendo da sentença do rei, e decide ir à praça para ver ele sendo guilhotinado.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 102,
@@ -1648,9 +1648,9 @@
                         nextpoint: 101,
                     }
                 },
-        //102 
+        //102
                 {
-                    action: "1 ano se passa, e você fica sabendo da sentença do rei, e decide ir à praça para ver ele sendo guilhotinado.",
+                    action: "Um tempo mais tarde, o mesmo acontece com a rainha, e você novamente vai ver.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 103,
@@ -1666,7 +1666,7 @@
                 },
         //103
                 {
-                    action: "Um tempo mais tarde, o mesmo acontece com a rainha, e você novamente vai ver.",
+                    action: "Após estes acontecimentos, decide se mudar para a floresta.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 104,
@@ -1682,7 +1682,7 @@
                 },
         //104
                 {
-                    action: "Após estes acontecimentos, decide se mudar para a floresta.",
+                    action: "Assim, morando na floresta, você passa o resto de sua vida.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 105,
@@ -1698,10 +1698,10 @@
                 },
         //105
                 {
-                    action: "Assim, morando na floresta, você passa o resto de sua vida.",
+                    action: "Seus últimos pensamentos foram: “Espero te ver em Valhala, meu caro amigo.”",
                     opt1: {
-                        text: "Continuar",
-                        nextpoint: 106,
+                        text: "Fim", // linkar tela final
+                        nextpoint: 105,
                     },
                     opt2: {
                         text: "",
@@ -1714,10 +1714,10 @@
                 },
         //106
                 {
-                    action: "Seus últimos pensamentos foram: “Espero te ver em Valhala, meu caro amigo.”",
+                    action: "Você aceita.",
                     opt1: {
-                        text: "Fim", // linkar tela final
-                        nextpoint: 106,
+                        text: "continuar",
+                        nextpoint: 107,
                     },
                     opt2: {
                         text: "",
@@ -1730,7 +1730,7 @@
                 },
         //107
                 {
-                    action: "Você aceita.",
+                    action: "Logo na primeira missão, você teria que enfrentar o Exército Austro-Prussiano, que tentava devolver o poder para as mãos de Luiz VXI.",
                     opt1: {
                         text: "continuar",
                         nextpoint: 108,
@@ -1746,7 +1746,7 @@
                 },
         //108
                 {
-                    action: "Logo na primeira missão, você teria que enfrentar o Exército Austro-Prussiano, que tentava devolver o poder para as mãos de Luiz VXI.",
+                    action: "O Exército Revolucionário era desengonçado, precário, parecia uma tarefa impossível.",
                     opt1: {
                         text: "continuar",
                         nextpoint: 109,
@@ -1762,7 +1762,7 @@
                 },
         //109
                 {
-                    action: "O Exército Revolucionário era desengonçado, precário, parecia uma tarefa impossível.",
+                    action: "Dumoriez e François Christophe Kellerman pegaram a liderança.",
                     opt1: {
                         text: "continuar",
                         nextpoint: 110,
@@ -1778,7 +1778,7 @@
                 },
         //110
                 {
-                    action: "Dumoriez e François Christophe Kellerman pegaram a liderança.",
+                    action: "20 de setembro de 1792,",
                     opt1: {
                         text: "continuar",
                         nextpoint: 111,
@@ -1794,7 +1794,7 @@
                 },
         //111
                 {
-                    action: "20 de setembro de 1792",
+                    action: "Dia em que você torcia para Deus ser o último desta luta infernal, pois já estava nas suas últimas forças.",
                     opt1: {
                         text: "continuar",
                         nextpoint: 112,
@@ -1810,9 +1810,9 @@
                 },
         //112
                 {
-                    action: "Dia em que você torcia para Deus ser o último desta luta infernal, pois já estava nas suas últimas forças.",
+                    action: "Avança 2 inimigos para cima de ti.",
                     opt1: {
-                        text: "continuar",
+                        text: "Batalhar", //linkar combate
                         nextpoint: 113,
                     },
                     opt2: {
@@ -1826,10 +1826,10 @@
                 },
         //113
                 {
-                    action: "Avança 2 inimigos para cima de ti.",
+                    action: "Você consegue enfrentar eles, mas sai com ferimentos sérios.",
                     opt1: {
-                        text: "Batalhar", //linkar combate
-                        nextpoint: 113,
+                        text: "Continuar",
+                        nextpoint: 114,
                     },
                     opt2: {
                         text: "",
@@ -1842,14 +1842,14 @@
                 },
         //114
                 {
-                    action: "Você consegue enfrentar eles, mas sai com ferimentos sérios.",
+                    action: "Avança muitos mais inimigos em cima de ti, tanto que não consegue nem ao menos contar.",
                     opt1: {
-                        text: "Continuar",
+                        text: "Fugir",
                         nextpoint: 115,
                     },
                     opt2: {
-                        text: "",
-                        nextpoint: 114,
+                        text: "Tentar recuar por hora",
+                        nextpoint: 115,
                     },
                     opt3: {
                         text: "",
@@ -1858,14 +1858,14 @@
                 },
         //115
                 {
-                    action: "Avança muitos mais inimigos em cima de ti, tanto que não consegue nem ao menos contar.",
+                    action: "Você não tem escapatória.",
                     opt1: {
-                        text: "Fugir",
+                        text: "Continuar",
                         nextpoint: 116,
                     },
                     opt2: {
-                        text: "Tentar recuar por hora",
-                        nextpoint: 116,
+                        text: "",
+                        nextpoint: 115,
                     },
                     opt3: {
                         text: "",
@@ -1874,7 +1874,7 @@
                 },
         //116
                 {
-                    action: "Você não tem escapatória.",
+                    action: "Você acaba por morrer em combate.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 117,
@@ -1890,7 +1890,7 @@
                 },
         //117
                 {
-                    action: "Você acaba por morrer em combate.",
+                    action: "Seus últimos pensamentos são divididos.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 118,
@@ -1906,7 +1906,7 @@
                 },
         //118
                 {
-                    action: "Seus últimos pensamentos são divididos.",
+                    action: "Uma parte de você estava desejando a vitória sobre aquela guerra, cortejando a morte do rei, torcendo para a França se tornar um lugar melhor.",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 119,
@@ -1922,7 +1922,7 @@
                 },
         //119
                 {
-                    action: "Uma parte de você estava desejando a vitória sobre aquela guerra, cortejando a morte do rei, torcendo para a França se tornar um lugar melhor.",
+                    action: "A outra, estava pensando sobre Patróclo:",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 120,
@@ -1936,9 +1936,9 @@
                         nextpoint: 119,
                     }
                 },
-        //120
+        //120 //pensamento de aliquis
                 {
-                    action: "A outra, estava pensando sobre Patróclo:",
+                    action: "Espero ter feito algo bom meu caro amigo, espero ter consigo influenciar em algo, ter ajudado a França...",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 121,
@@ -1954,7 +1954,7 @@
                 },
         //121 //pensamento de aliquis
                 {
-                    action: "Espero ter feito algo bom meu caro amigo, espero ter consigo influenciar em algo, ter ajudado a França...",
+                    action: "...Espero ter conseguido viver igual um guerreiro que você tanto falava, bem, minhas preces finais vão para ti",
                     opt1: {
                         text: "Continuar",
                         nextpoint: 122,
@@ -1970,34 +1970,18 @@
                 },
         //122 //pensamento de aliquis
                 {
-                    action: "...Espero ter conseguido viver igual um guerreiro que você tanto falava, bem, minhas preces finais vão para ti",
-                    opt1: {
-                        text: "Continuar",
-                        nextpoint: 123,
-                    },
-                    opt2: {
-                        text: "",
-                        nextpoint: 122,
-                    },
-                    opt3: {
-                        text: "",
-                        nextpoint: 122,
-                    }
-                },
-        //123 //pensamento de aliquis
-                {
                     action: "Espero lhe encontrar em Valhalla!",
                     opt1: {
                         text: "Fim", 
-                        nextpoint: 123, //linkar quadro final
+                        nextpoint: 122, //linkar quadro final
                     },
                     opt2: {
                         text: "",
-                        nextpoint: 123,
+                        nextpoint: 122,
                     },
                     opt3: {
                         text: "",
-                        nextpoint: 123,
+                        nextpoint: 122,
                     }
                 },	
                 ];
@@ -2037,12 +2021,85 @@ function applyPoint(next) {
 
     const point = history[next];
 
-    if(point.action == "Olá caro Jogador, antes de interagir com o século 18, que tal saber um pouco sobre minha história??"){
-        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/UPFb4JC.jpeg")   
+    if(point.action == "Você massacra os seus inimigos."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/j5Bpxuv.jpg")   
     }
-    if(point.action == "Meu nome é Aliquis Petit, nasci em 1768, na região próxima ao Palácio de Versalhes. Não sei muito sobre meus pais, sou órfão desde que eu me entendo por gente. Minha maior ambição é conseguir fazer algo a respeito dessa monarquia, enquanto todos vivem na pobreza, o clero esnoba com suas festividades e negligenciam o próprio povo."){
-        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpeg")   
+	if(point.action == "Pierre chega para falar que já tinha acabado, você olha para ele, e percebe-se o seu choro."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/IsAoHak.jpg")   
     }
+	if(point.action == "Você dá um grito para o alto, e finalmente começa a olhar tudo o que tinha acontecido."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/O6wRbDN.jpg")   
+    }
+	if(point.action == "Você corre para o corpo de Patróclo, e ele com os seus últimos suspiros, lhe fala:"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/B5rsLzT.jpg")   
+    }
+	if(point.action == "F-fez um estrago, hein."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/9QzUTXR.jpg")   
+    }
+	if(point.action == "10 horas depois."){
+        document.getElementById("scene-image").setAttribute("src", "")   
+    }
+	if(point.action == "Em uma comemoração por conseguir a tomada de Bastilha, vocês fazem um pequeno banquete."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/CDsDyWd.jpg")   
+    }
+	if(point.action == "Posso me juntar a você?"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/ryOBU36.jpg")   
+    }
+	if(point.action == "Por que você acha que ele se sacrificou por mim?"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/V2R2FZm.jpg")   
+    }
+	if(point.action == "Por que você acha que ele se sacrificou por mim?"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/V2R2FZm.jpg")   
+    }
+	if(point.action == "Não faço ideia, quem sabe, é porque ele te via como um irmão mais novo a ser protegido."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/ryOBU36.jpg")   
+    }
+	if(point.action == "Desde sempre, eu só me importei comigo e com a minha ambição!"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/V2R2FZm.jpg")   
+    }
+	if(point.action == "Cuidado para não se afogar em magoas por não conseguir fazer algo tão grande."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/ryOBU36.jpg")   
+    }
+	if(point.action == "É um peso que eu vou levar, tenho que levar."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/V2R2FZm.jpg")   
+    }
+	if(point.action == "Só pelo fato dele se sacrificar acha mesmo que tem o direito de carregar os sonhos dele? Quanta arrogância."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/ryOBU36.jpg")   
+    }
+	if(point.action == "Você começa a refletir sobre o que Pierre disse."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/CDsDyWd.jpg")   
+    }
+	if(point.action == "Quem sabe, ele tenha razão... Irei tirar um tempo para mim. Parar de sempre querer vingança, tentar viver a vida realmente."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/HaHrOpg.jpg")   
+    }
+	if(point.action == "Você volta para casa, e mesmo que a França estivesse nosseus piores estados possíveis..."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/OWxC3QL.jpg")   
+    }
+	if(point.action == "Frequentemente Pierre, ia te visitar. Uma dessas visitas foi bastante inoportuna."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/nDs5xmB.jpg")   
+    }
+	if(point.action == "Por mais que esteja treinando, prefiro ficar aqui, longe batalhas, acho que era isto que Patróclo gostaria."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/ECkIVEy.jpg")   
+    }
+	if(point.action == "É, você tem razão, bem, já vou indo, tenho muito a fazer até outro dia, Aliquis."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/HkYgDou.jpg")   
+    }
+	if(point.action == "1 ano se passa, e você fica sabendo da sentença do rei, e decide ir à praça para ver ele sendo guilhotinado."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/iyYhIjG.jpg")   
+    }
+	if(point.action == "Um tempo mais tarde, o mesmo acontece com a rainha, e você novamente vai ver."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/CFLczSY.jpg")   
+    }
+	if(point.action == "Após estes acontecimentos, decide se mudar para a floresta."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Iuw2blk.jpg")   
+    }
+	if(point.action == "Assim, morando na floresta, você passa o resto de sua vida."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/r5o1rJD.jpg")   
+    }
+	if(point.action == "Logo na primeira missão, você teria que enfrentar o Exército Austro-Prussiano, que tentava devolver o poder para as mãos de Luiz VXI."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpg")   
+    }
+	
     
 // SE OPT1 TEXT IGUAL A BATALHAR ENTÃO BASTA COLOCAR O LINK DA RESPECTIVA PÁGINA DE COMBATE
 
@@ -2063,7 +2120,7 @@ setTimeout(() => {
         option1_bt.setAttribute("onclick", "window.location = 'https://aaljim.github.io/Repositorio_jogo_I.N.C.E.L/battle_tests_batalha5.html'");
     };
     if(point.opt1.text == "Você morreu"){
-        option1_bt.setAttribute("onclick", "window.location = 'https://tiago070.github.io/integrador2022/morte_aliquis.html'");
+        option1_bt.setAttribute("onclick", "window.location = 'morte_aliquis.html'");
     };
 
 

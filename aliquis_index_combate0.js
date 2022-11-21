@@ -150,7 +150,7 @@
         },
 //9
         {
-            action: '"Ouvi que estão com um plano de tomar bastilha e fazer uma declaração por direito do homem e do cidadão. Mostrar pra aquele reizinho de merda quem somos"',
+            action: "Ouvi que estão com um plano de tomar bastilha e fazer uma declaração por direito do homem e do cidadão. Mostrar pra aquele reizinho de merda quem somos",
             opt1: {
                 text: "continuar",
                 nextpoint: 10,
@@ -200,7 +200,7 @@
     
 //12
         {
-            action: "Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou.",
+            action: "Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou sem pensar duas vezes.",
             opt1: {
                 text: "continuar",
                 nextpoint: 13,
@@ -448,7 +448,7 @@
         },			
 //27
         {
-            action: '"Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou."',
+            action: "Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou.",
             opt1: {
                 text: "continuar",
                 nextpoint: 28,
@@ -2057,8 +2057,96 @@ function applyPoint(next) {
         document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/UPFb4JC.jpeg")   
     }
     if(point.action == "Meu nome é Aliquis Petit, nasci em 1768, na região próxima ao Palácio de Versalhes. Não sei muito sobre meus pais, sou órfão desde que eu me entendo por gente. Minha maior ambição é conseguir fazer algo a respeito dessa monarquia, enquanto todos vivem na pobreza, o clero esnoba com suas festividades e negligenciam o próprio povo."){
-        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpeg")   
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpg")   
     }
+	if(point.action == "Você está voltando de mais um dia de trabalho, e sente um pouco de fome."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpg")   
+    }
+	if(point.action == "Você decide ir para o bar se alimentar de um árduo dia."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/hNvovWK.jpg")   
+    }
+	if(point.action == "Chegando ao bar, você avista seu amigo, Patróclo."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/aypyVJQ.jpg")   
+    }
+	if(point.action == "Você pergunta como vão as coisas, ele fica sério."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/C20svnW.jpg")   
+    }
+	if(point.action == "Sabe Aliquis, hoje mais cedo teve a Assembleia... Não vamos conseguir nada se continuar com a calma."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/1u7z9CU.jpg")   
+    }
+	if(point.action == "Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/4EwhdDT.jpg")   
+    }
+	if(point.action == "É assim que se fala Aliquis. Vamos comer e beber um pouco, você deve estar com fome."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/1u7z9CU.jpg")   
+    }
+	if(point.action == "Nessas duas semanas, você treinou arduamente todos os dias sem falta."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpg")   
+    }
+	if(point.action == "Patróclo vai bem cedo na sua casa te chamar."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/hGbmDTF.jpg")   
+    }
+	if(point.action == "Está pronto?"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/hMf9yur.jpg")   
+    }
+	if(point.action == "Chegando junto da multidão, você percebe que são inúmeras pessoas."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/vK03sQN.jpg")   
+    }
+	if(point.action == "Chegando junto da multidão, você percebe que são inúmeras pessoas."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/vK03sQN.jpg")   
+    }
+	if(point.action == "Patróclo lhe apresenta para o líder da multidão, o Pierre Lorenzo."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/5OoTBZO.jpg")   
+    }
+	if(point.action == "Vai ser bom lhe ter aqui, meu filho."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/aZRD8WB.jpg")   
+    }
+	if(point.action == "Sua impressão a respeito de Pierre, é que ele se encaixa perfeitamente para o papel de um líder."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/vK03sQN.jpg")   
+    }
+	if(point.action == "HOMENS, NÓS HOJE VAMOS TOMAR BASTILHA EM RESPOSTA A TODOS OS CIDADÃOS QUE ESTÃO MORRENDO E QUE MORRERAM POR NEGLICENCIA DESTE SER QUE OUSAMOS CHAMAR DE REI!"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/1z1PB88.jpg")   
+    }
+	if(point.action == "Assim, após este emocionante discurso, todos vão rumo a Bastilha."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/sMkxXCb.jpg")   
+    }
+	if(point.action == "Chegando já perto, você tem um vislumbre da prisão."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/0zhBc6Z.jpg")   
+    }
+	if(point.action == "Pierre para todos, e diz para rezarem para os seus deuses antes de começar a luta."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/jDg8dWu.jpg")   
+    }
+	if(point.action == "Você acaba por se juntar a multidão em uma reza."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/CMxI3ht.jpg")   
+    }
+	if(point.action == "Enfim no local, já explode batalhas e mais batalhas."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/8xHBe8h.jpg")   
+    }
+	if(point.action == "Você volta para casa, mas não tem nada pra comer, então, você decide dormir."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/OWxC3QL.jpg")   
+    }
+	if(point.action == "No dia seguinte, sai de casa para mais um trabalho, e acaba por ler um panfleto jogado na rua. O panfleto fala sobre a Assembleia dos Estados Gerais, e vê que não adiantaria nada resolver as coisas de um jeito pacífico. Você então continua indo para o trabalho, contudo, no meio do caminho, avista seu melhor amigo, Patróclo Tisía Hetairos. Você comenta sobre a Assembleia com ele, e ele lhe conta sobre a ideia que estão tendo."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/vQx9pLm.jpg")   
+    }
+	if(point.action == "Ouvi que estão com um plano de tomar bastilha e fazer uma declaração por direito do homem e do cidadão. Mostrar pra aquele reizinho de merda quem somos"){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/GMnt5G2.jpg")   
+    }
+	if(point.action == "Ele lhe pergunta se quer se juntar."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/lbjDb52.jpg")   
+    }
+	if(point.action == "Sabe Patróclo, desde sempre eu quis isto, ir contra este rei de merda. Eu vou sem pensar duas vezes."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/Z1jogqN.jpg")   
+    }
+	if(point.action == "É assim que se fala Aliquis. Vai ser em 2 semanas, se prepare."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/GMnt5G2.jpg")   
+    }
+	if(point.action == "Tenho duas semanas para me preparar, ok... vamos lá."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpg")   
+    }
+	if(point.action == "Você recusa, mas se lembra de todo o seu passado."){
+        document.getElementById("scene-image").setAttribute("src", "https://i.imgur.com/fpRVIT0.jpg")   
+    }
+
     
     
 // SE OPT1 TEXT IGUAL A BATALHAR ENTÃO BASTA COLOCAR O LINK DA RESPECTIVA PÁGINA DE COMBATE
